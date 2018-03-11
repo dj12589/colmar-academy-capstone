@@ -1,3 +1,60 @@
+/* Header  */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 64px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+nav span {
+  padding: 16px;
+}
+
+.colmar {
+  font-weight: bold;
+}
+
 h1 {
-  color: green;
+  font-size: 2rem;
+}
+
+
+/* First Section  */
+
+.section-1 {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+}
+
+.section-1 .column-1 img {
+  padding: 32px 24px;
+  width: 60%;
+}
+
+.section-1 .column-1 {
+}
+
+.section-1 .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+
+}
+
+/* Second Section */
+
+.section-3 {
+  background-color: lightgray;
 }
