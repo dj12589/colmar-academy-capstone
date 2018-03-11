@@ -1,14 +1,31 @@
 /* Universal */
 html {
   font-size: 18px;
+  line-height:normal;
+}
+
+body {
+  margin: 0 auto;
 }
 
 h1 {
   font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 
 
@@ -20,8 +37,9 @@ header {
   align-items: center;
   align-content: center;
   height: 64px;
-  margin-right: 24px;
-  margin-left: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  background-color: #B3D89C;
 }
 
 nav span {
@@ -32,6 +50,10 @@ nav span {
   font-weight: bold;
 }
 
+.school-name-and-logo {
+  display: flex;
+  align-items: center;
+}
 
 
 /* First Section  */
@@ -44,11 +66,11 @@ nav span {
 
 .section-1 .column-1 img {
   max-width: 100%;
-  padding: 32px 24px;
 }
 
 .section-1 .column-1 {
-  width: 60%
+  max-width: 60%;
+  padding: 32px 24px;
 }
 
 .section-1 .column-2 {
@@ -59,12 +81,10 @@ nav span {
 }
 
 .section-1 h1, .section-1 h3 {
-  width: 65%;
+  max-width: 65%;
 }
 
 button {
-  padding-top: 8px;
-  padding-bottom: 8px;
   display: flex;
   width: 65%;
   justify-content: center;
@@ -74,24 +94,24 @@ button {
 
 .section-2 {
   display: flex;
-
 }
+
 .section-2 .column-1 {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  max-width: 60%;
+  padding: 32px 24px;
 }
 
 .section-2 .column-2 {
   display: flex;
   flex-direction: column;
   padding-top: 16px;
-  width: 40%;
+  max-width: 40%;
 }
 
 .section-2 .column-1 img {
   max-width: 100%;
-  padding: 32px 24px;
 }
 
 .section-2 .column-2 img {
@@ -104,12 +124,115 @@ button {
   display: flex;
 }
 
+.section-2 .row-3 {
+  background-color: lightgray;
+}
+
 .row-content {
   display: flex;
   flex-direction: column;
-  width: 65%
+  max-width: 65%
 }
 
+/* Third Section */
+
 .section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: lightgray;
+}
+
+.section-3 h2 {
+  padding-top: 32px;
+}
+
+.grid {
+  padding: 0 72px 32px 72px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid .row-one, .grid .row-two {
+  display: flex;
+}
+
+.grid-item {
+  background-color: white;
+  max-width: 30%;
+  margin: 32px;
+}
+
+.grid-item .content {
+  padding: 16px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fourth Section */
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-4 h2 {
+  padding-top: 32px;
+}
+
+.section-4 .column-1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  padding: 32px 24px;
+}
+
+.section-4 .column-2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  max-width: 40%;
+}
+
+video {
+  max-width: 100%;
+}
+
+.section-4 .column-2 img {
+  width: 35%;
+  height: 35%;
+  padding: 16px;
+}
+
+.section-4 .row-one, .section-4 .row-two {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-4 .row-one {
+  background-color: lightgray;
+}
+
+.section-4 .main-content {
+  display: flex;
+}
+
+.row-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 65%
+}
+
+/* Footer  */
+
+footer {
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 24px 24px 0px;
+  height: 64px;
 }
