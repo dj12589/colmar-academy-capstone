@@ -1,3 +1,17 @@
+/* Universal */
+html {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+
 /* Header  */
 
 header {
@@ -18,9 +32,6 @@ nav span {
   font-weight: bold;
 }
 
-h1 {
-  font-size: 2rem;
-}
 
 
 /* First Section  */
@@ -32,11 +43,12 @@ h1 {
 }
 
 .section-1 .column-1 img {
+  max-width: 100%;
   padding: 32px 24px;
-  width: 60%;
 }
 
 .section-1 .column-1 {
+  width: 60%
 }
 
 .section-1 .column-2 {
@@ -46,14 +58,57 @@ h1 {
   justify-content: center;
 }
 
+.section-1 h1, .section-1 h3 {
+  width: 65%;
+}
+
 button {
   padding-top: 8px;
   padding-bottom: 8px;
   display: flex;
-
+  width: 65%;
+  justify-content: center;
 }
 
 /* Second Section */
+
+.section-2 {
+  display: flex;
+
+}
+.section-2 .column-1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.section-2 .column-2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  width: 40%;
+}
+
+.section-2 .column-1 img {
+  max-width: 100%;
+  padding: 32px 24px;
+}
+
+.section-2 .column-2 img {
+  width: 35%;
+  height: 35%;
+  padding: 16px;
+}
+
+.section-2 .row {
+  display: flex;
+}
+
+.row-content {
+  display: flex;
+  flex-direction: column;
+  width: 65%
+}
 
 .section-3 {
   background-color: lightgray;
