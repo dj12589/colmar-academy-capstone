@@ -1,16 +1,14 @@
 /* Universal */
-html {
-  font-size: 18px;
-  line-height:normal;
-}
 
-header {
-  font-family: "Merriweather", sans-serif;
-  color: #E6EBE0;
+/* I wanted to explain the rationale for my color scheme in case you had any feedback on that! I wanted it to have a gender-neutral feel and to make it have less issues for color-blind viewers. I couldn't find specifically how to get palettes that would work for color-blindness, but I did find definite combinations to avoid, so that was another reason I kept it neutral. */
+
+html {
+  font-size: 16px;
 }
 
 body {
   margin: 0px auto;
+  width: 100%;
 }
 
 h1 {
@@ -60,12 +58,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-content: center;
   height: 64px;
-  padding-right: 24px;
-  padding-left: 24px;
   background-color: #C6C7C4;
   color: #846A6A;
+  font-family: "Merriweather", sans-serif;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 nav span {
@@ -88,6 +86,7 @@ nav span {
   background-color: #EEF0F2;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .section-1 .column-1 img {
@@ -149,7 +148,7 @@ button h3 {
 }
 
 .section-2 .column-1 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .section-2 .column-2 img {
@@ -160,6 +159,7 @@ button h3 {
 
 .section-2 .row {
   display: flex;
+  padding-right: 16px;
 }
 
 .section-2 .row-3 {
@@ -169,7 +169,7 @@ button h3 {
 .row-content {
   display: flex;
   flex-direction: column;
-  max-width: 65%
+  width: 65%
 }
 
 /* Third Section */
@@ -197,8 +197,12 @@ button h3 {
 
 .grid-item {
   background-color: white;
-  max-width: 30%;
+  width: 30%;
   margin: 32px;
+}
+
+.grid-item:hover {
+  transform: scale(1.2);
 }
 
 .grid-item .content {
@@ -210,7 +214,7 @@ button h3 {
 }
 
 .grid-item img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -252,6 +256,7 @@ video {
 .section-4 .row-one, .section-4 .row-two {
   display: flex;
   flex-direction: row;
+  padding-right: 16px;
 }
 
 .section-4 .row-one {
