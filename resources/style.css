@@ -304,6 +304,7 @@ button:hover {
 
 .grid .row-one, .grid .row-two {
   display: flex;
+  justify-content: space-around;
 }
 
 .grid-item {
@@ -333,13 +334,15 @@ button:hover {
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .grid-item {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 175px;
+    margin: 16px;
   }
 }
+
 
 @media only screen and (max-width: 600px) {
   .grid {
