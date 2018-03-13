@@ -235,12 +235,16 @@ button:hover {
     display: flex;
     align-items: center;
     padding-right: 0px;
+    justify-content: center;
   }
   .section-2 {
-    min-width: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     padding-right: 0px;
+  }
+  .row, .row-3 {
+    width: 100%;
   }
 }
 
@@ -250,10 +254,11 @@ button:hover {
   }
 
   .section-2 .column-2 {
-    min-width: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     padding-right: 0px;
+
   }
 
   .section-2 .column-2 img {
@@ -262,7 +267,11 @@ button:hover {
     display: flex;
   }
 
-  .row {
+  .section-2 .row {
+    padding-right: 0px;
+  }
+
+  .row, .row-3 {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -316,7 +325,7 @@ button:hover {
 }
 
 .grid-item img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -328,7 +337,7 @@ button:hover {
   .grid-item {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 35%;
   }
 }
 
@@ -343,12 +352,14 @@ button:hover {
   }
 
   .mobile-grid-item {
-    width: 100%;
+    max-width: 100%;
     margin: 8px 16px;
     padding: 16px;
     background-color: #846A6A;
     padding: 16px;
+    text-align: center;
   }
+
 
   .mobile-grid-item h4 {
     color: #EEF0F2;
