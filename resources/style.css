@@ -2,6 +2,11 @@
 
 /* I wanted to explain the rationale for my color scheme in case you had any feedback on that! I wanted it to have a gender-neutral feel and to make it have less issues for color-blind viewers. I couldn't find specifically how to get palettes that would work for color-blindness, but I did find definite combinations to avoid, so that was another reason I kept it neutral. */
 
+
+* {
+	box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
 }
@@ -16,12 +21,14 @@ h1 {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #353B3C;
+  padding: 16px 0;
 }
 
 h2 {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   color: #353B3C;
+  padding: 16px 0;
 
 }
 
@@ -30,6 +37,7 @@ h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #353B3C;
+  padding: 16px 0;
 }
 
 h4 {
@@ -38,12 +46,14 @@ h4 {
   margin-bottom: 0px;
   font-family: "Montserrat", sans-serif;
   color: #353B3C;
-
+  padding: 16px 0;
 }
 
 p {
   font-family: "Lato", sans-serif;
-color: #353B3C;
+  color: #353B3C;
+  line-height: 1.4;
+  padding: 16px 0;
 }
 
 a {
@@ -70,6 +80,10 @@ nav span {
   padding: 16px;
 }
 
+nav span:hover {
+  color: #353B3C;
+}
+
 .colmar {
   font-weight: bold;
 }
@@ -79,6 +93,25 @@ nav span {
   align-items: center;
 }
 
+.mobile-header {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    background-color: #C6C7C4;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 
 /* First Section  */
 
@@ -87,6 +120,10 @@ nav span {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section-1 .column-1 img {
@@ -114,12 +151,30 @@ button {
   width: 65%;
   justify-content: center;
   background-color: #A2999E
-
 }
 
 button h3 {
   font-weight: 400;
   color: #EEF0F2;
+  padding: 16px 0;
+}
+
+button:hover {
+  background-color: #846A6A;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+  }
+  .section-1 .column-1 {
+    max-width: 100%;
+  }
+  .section-1 .column-2 {
+    align-items: center;
+  }
 }
 
 /* Second Section */
@@ -171,6 +226,53 @@ button h3 {
   flex-direction: column;
   width: 65%
 }
+@media only screen and (max-width: 800px) {
+  .section-2 .column-1 {
+    display: none;
+  }
+  .section-2 .column-2 {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+  }
+  .section-2 {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-2 .column-1 {
+    display: none;
+  }
+
+  .section-2 .column-2 {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+  }
+
+  .section-2 .column-2 img {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .row-content {
+    text-align: center;
+  }
+}
+
 
 /* Third Section */
 
@@ -217,6 +319,45 @@ button h3 {
   width: 100%;
   height: auto;
 }
+
+.mobile-section-3 {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: none;
+  }
+
+  .mobile-section-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-grid-item {
+    width: 100%;
+    margin: 8px 16px;
+    padding: 16px;
+    background-color: #846A6A;
+    padding: 16px;
+  }
+
+  .mobile-grid-item h4 {
+    color: #EEF0F2;
+  }
+  .mobile-grid-item:hover {
+    background-color: #A2999E;
+  }
+}
+
 
 /* Fourth Section */
 .section-4 {
@@ -273,6 +414,18 @@ video {
   max-width: 65%
 }
 
+@media only screen and (max-width: 600px) {
+  .section-4 .column-1 {
+    display: none;
+  }
+  .section-4 .column-2 {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+  }
+}
+
 /* Footer  */
 
 footer {
@@ -288,4 +441,10 @@ footer {
 
 footer span {
   padding: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .right {
+    display: none;
+  }
 }
