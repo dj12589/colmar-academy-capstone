@@ -31,7 +31,6 @@ h2 {
   font-family: "Montserrat", sans-serif;
   color: #353B3C;
   padding: 16px 0;
-
 }
 
 h3 {
@@ -212,9 +211,11 @@ button:hover {
             flex-direction: column;
     padding-bottom: 16px;
   }
+
   .section-1 .column-1 {
     max-width: 100%;
   }
+
   .section-1 .column-2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -292,10 +293,12 @@ button:hover {
           flex-direction: column;
   width: 65%
 }
+
 @media only screen and (max-width: 800px) {
   .section-2 .column-1 {
     display: none;
   }
+
   .section-2 .column-2 {
     min-width: 100%;
     display: -webkit-box;
@@ -309,6 +312,7 @@ button:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
   .section-2 {
     width: 100%;
     display: -webkit-box;
@@ -319,6 +323,7 @@ button:hover {
             align-items: center;
     padding-right: 0px;
   }
+
   .row, .row-3 {
     width: 100%;
   }
@@ -338,7 +343,6 @@ button:hover {
         -ms-flex-align: center;
             align-items: center;
     padding-right: 0px;
-
   }
 
   .section-2 .column-2 img {
@@ -366,6 +370,7 @@ button:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+
   .row-content {
     text-align: center;
   }
@@ -452,7 +457,6 @@ button:hover {
     margin: 16px;
   }
 }
-
 
 @media only screen and (max-width: 600px) {
   .grid {
@@ -576,6 +580,7 @@ video {
   .section-4 .column-1 {
     display: none;
   }
+  
   .section-4 .column-2 {
     min-width: 100%;
     display: -webkit-box;
